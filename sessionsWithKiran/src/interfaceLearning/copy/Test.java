@@ -1,4 +1,4 @@
-package interfaceLearning;
+package interfaceLearning.copy;
 
 public class Test {
 
