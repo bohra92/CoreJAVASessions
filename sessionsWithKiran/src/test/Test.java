@@ -1,5 +1,9 @@
 package test;
 
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
 import java.util.Arrays;
 import java.util.HashMap;
 
@@ -83,6 +87,18 @@ public class Test {
 		arr=arr1;
 		System.out.println(Arrays.toString(arr));
 		
+		
+		 FileReader fr;
+		try {
+			fr = new FileReader("D:\\testout.txt");
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}    
+         int i;    
+         while((i=fr.read())!=-1)    
+         System.out.print((char)i);    
+         fr.close();   
 		
 
 	}
